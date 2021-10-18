@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {Image, Text, TextInput, View, StyleSheet, TextComponent, ScrollView} from 'react-native';
-import PIC from './logo.jpg';
-import SampleComponent from './SampleComponent';
+import PIC from '../../asets/image/logo.jpg';
+import SampleComponent from '../SampleComponent';
 
 // Membuat Komponen Baru untuk belajar Styling
-const StylingRNComponent = ()=>{
+const StylingComponent = ()=>{
     return(
       <View>
         {/* Membuat style menggunakan component stylesheet */}
@@ -20,7 +20,7 @@ const StylingRNComponent = ()=>{
         <View style={{margin:12, padding: 12, backgroundColor:'#999087', width:212, borderRadius:10}}>
           <Image source={PIC} style={{width:188, height: 188, borderRadius:10}} />
           <Text style={{marginTop:16, color:'#000000', fontWeight:'bold'}}>WILKIE CREATIVE WORKS</Text>
-          <Text style={{marginTop:14, color:'white', fontWeight:'bold'}}>We Play with Creativity</Text>
+          <Text style={{marginTop:14, color:'#FFF', fontWeight:'bold'}}>We Play with Creativity</Text>
           
           <View style={{backgroundColor:'#18BF65',
                         height:40,
@@ -28,7 +28,7 @@ const StylingRNComponent = ()=>{
                         borderRadius:50,
                         paddingVertical:6,
                         marginTop:20}}>
-            <Text style={{textAlign:'center', fontSize:30,color:'white'}}>Visit Us</Text>
+            <Text style={{textAlign:'center', fontSize:16,color:'white'}}>Visit Us</Text>
           </View>
         </View>
       </View>
@@ -47,4 +47,4 @@ const StylingRNComponent = ()=>{
     }
   });
 
-export default StylingRNComponent;
+export default StylingComponent;
